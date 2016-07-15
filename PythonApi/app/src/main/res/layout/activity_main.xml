@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.fupei.pythonapi.MainActivity">
+    tools:context=".activitys.MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -145,6 +145,7 @@
             android:layout_height="match_parent" />
 
         <TextView
+            android:id="@+id/tv_login_sina"
             android:drawableLeft="@mipmap/logo_weibo"
             android:drawablePadding="2dp"
             android:textStyle="bold"
