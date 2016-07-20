@@ -1,160 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activitys.MainActivity">
+    android:orientation="vertical"
+    android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:minHeight="?attr/actionBarSize"
+    <FrameLayout
+        android:id="@+id/ly_main"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="0dp">
 
-    <RelativeLayout
-        android:layout_below="@+id/toolbar"
-        android:gravity="center"
-        android:layout_above="@+id/ly_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView
-            android:background="@mipmap/logo_welcome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RelativeLayout>
+    </FrameLayout>
 
     <LinearLayout
-        android:layout_margin="16dp"
-        android:id="@+id/ly_content"
-        android:layout_centerInParent="true"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/et_account"
-            android:textStyle="bold"
-            android:drawablePadding="2dp"
-            android:drawableBottom="@drawable/selector_edittext"
-            android:background="@null"
-            android:layout_marginBottom="30dp"
-            android:hint="手机号/邮箱"
-            android:textColorHint="@color/text_hint"
-            android:paddingLeft="10dp"
-            android:maxLines="1"
-            android:maxEms="1"
-            android:includeFontPadding="true"
-            android:textColor="@android:color/background_dark"
-            android:textCursorDrawable="@drawable/shape_cursor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <EditText
-            android:id="@+id/et_password"
-            android:textStyle="bold"
-            android:drawablePadding="2dp"
-            android:textColor="@android:color/background_dark"
-            android:drawableBottom="@drawable/selector_edittext"
-            android:textCursorDrawable="@drawable/shape_cursor"
-            android:background="@null"
-            android:textColorHint="@color/text_hint"
-            android:hint="密码"
-            android:paddingLeft="10dp"
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:id="@+id/tv_login"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:padding="14dp"
-            android:background="@drawable/shape_green"
-            android:textColor="@android:color/white"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:text="登 录"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <LinearLayout
-
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:textStyle="bold"
-                android:textColor="@color/text_green"
-                android:gravity="right"
-                android:layout_weight="1"
-                android:text="注册账号"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:background="@android:color/darker_gray"
-                android:layout_width="1dp"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:textStyle="bold"
-                android:text="忘记密码"
-                android:textColor="@color/text_gray"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_margin="16dp"
-        android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:gravity="right"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:drawableLeft="@mipmap/logo_weixin"
-                android:textStyle="bold"
-                android:textColor="@color/text_gray"
-                android:gravity="right"
-                android:drawablePadding="2dp"
-                android:text="微信登录"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
         <TextView
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:background="@android:color/darker_gray"
-            android:layout_width="1dp"
-            android:layout_height="match_parent" />
-
-        <TextView
-            android:id="@+id/tv_login_sina"
-            android:drawableLeft="@mipmap/logo_weibo"
-            android:drawablePadding="2dp"
-            android:textStyle="bold"
-            android:text="微博登录"
-            android:textColor="@color/text_gray"
+            android:id="@+id/tv_friend"
+            android:padding="10dp"
+            android:text="好友"
             android:layout_weight="1"
-            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_function"
+            android:padding="10dp"
+            android:text="功能"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
-
-
-</RelativeLayout>
+</LinearLayout>
